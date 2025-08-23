@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 // --- Configuration ---
 // The base URL for your backend API.
 // It's best practice to store this in a .env file for production.
-const API_URL = 'http://localhost:5000/api/v1/users';
+const API_URL = `${import.meta.env.VITE_API_BASE_URL}/users`;
 
 const AuthContext = createContext();
 
