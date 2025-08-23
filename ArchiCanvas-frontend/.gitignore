@@ -1,0 +1,19 @@
+# Ignore the ai folder and all its contents
+ai/
+
+# Node.js dependencies
+node_modules/
+
+# Python cache
+__pycache__/
+**/.cache/
+
+# Temporary file uploads
+uploads/
+
+# Generated output files (audio and watermarked images)
+public/
+
+# Environment variables and secrets
+.env
+backend/config.env

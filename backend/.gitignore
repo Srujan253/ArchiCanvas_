@@ -1,0 +1,45 @@
+# Ignore the ai folder
+ai/
+
+# Node / frontend
+node_modules/
+dist/
+build/
+
+# Python cache
+__pycache__/
+**/.cache/
+
+# Temporary file uploads
+uploads/
+
+# Generated output files (audio and watermarked images)
+public/
+
+# Environment variables and secrets
+.env
+backend/config.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.vscode/
+.idea/
+# Dependencies
+backend/node_modules/
+
+# Python cache
+backend/_pycache_/
+**/.cache/
+
+# Temporary and generated files
+backend/uploads/
+backend/public/
+
+# Secrets (Most Important)
+backend/.env
+backend/config.env
+*.env
+config.env
