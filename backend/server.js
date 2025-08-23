@@ -15,14 +15,22 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 // app.use(cors({ origin: true, credentials: true }));
-app.use(
-  cors({
-    origin: "*", // allow all origins
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true, // allows cookies/headers with requests
-  })
-);
+// app.use(
+//   cors({
+//     origin: "*", // allow all origins
+//     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+//     allowedHeaders: ["Content-Type", "Authorization"],
+//     credentials: true, // allows cookies/headers with requests
+//   })
+// );
+app.use(cors({
+  origin: true, // ✅ reflects the request origin
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"],
+  credentials: true
+}));
+
+app.options("*", cors()); // handle preflight
 app.use(express.static(path.join(__dirname, "public")));
 
 // Database connection
