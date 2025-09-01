@@ -251,7 +251,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 For support and questions:
-- **Email**: hello@archicanvas.com
+- **Email**: srujanhm135@gmail.com
 - **Documentation**: [Coming Soon]
 - **Issues**: [GitHub Issues](https://github.com/your-repo/issues)
 
